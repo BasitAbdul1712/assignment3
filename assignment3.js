@@ -18,7 +18,7 @@ function woodCalculator(chair, table, bed) {
     }
    
 var woodNeeded = woodCalculator(14, 15, 10);
-console.log("total wood needed:", woodNeeded, "cubic feet")
+console.log("Total wood needed:", woodNeeded, "cubic feet")
 
 
 
@@ -80,7 +80,8 @@ for (let i = 0; i < name.length; i++) {
         shortName  = elementName;
         }
     }
-    
+   return shortName; 
 }
-var friendName = tinnyFriend(["Musaddik", "Munna", "O", "Jahangirs", "Rahat", "ABCjhjhnn", "AbdulBasit"]);
-console.log(shortName)
+name = ["Musaddik", "Munna", "Oli", "Jahangir", "Rahat", 'asad', 'shahan', 'emran', 'ruhul' ];
+var friendName = tinnyFriend(name);
+console.log('Shortest name from my friend list is: ',friendName)
