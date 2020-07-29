@@ -45,15 +45,18 @@ function brickCalculator(noOfFloors) {
     if (noOfFloors <= 10) {
         var totalFeet = 15*noOfFloors;    
     }
-    else if(noOfFloors > 10 && noOfFloors <=20) {
-        var totalFeet = 12*noOfFloors;   
+    else if(noOfFloors > 11 && noOfFloors <=20) {
+        var firstPortion = 15*noOfFloors 
+        var totalFeet = firstPortion + 12*noOfFloors;   
     }
     else{
-        var totalFeet = 10*noOfFloors;  
+        firstPortion = 15*noOfFloors;
+        seconPortion = 12*noOfFloors
+        var totalFeet = firstPortion + seconPortion+ 10*noOfFloors;  
     }
     return totalFeet*1000
 }
-var TotalNoOfBricks = brickCalculator(30)
+var TotalNoOfBricks = brickCalculator(45)
 console.log("Total Bricks needed:", TotalNoOfBricks, "bricks")
 
 
@@ -72,7 +75,7 @@ console.log(shortName) */
 
 
 // Problem no: 4
-function tinnyFriend(name) {
+function tinyFriend(name) {
     var smallName = name[0].length;
     var shortName = name[0];
 for (let i = 0; i < name.length; i++) {
@@ -86,5 +89,5 @@ for (let i = 0; i < name.length; i++) {
    return shortName; 
 }
 name = ["Musaddik", "Munna", "Oli", "Jahangir", "Rahat", 'asad', 'shahan', 'emran', 'ruhul' ];
-var friendName = tinnyFriend(name);
+var friendName = tinyFriend(name);
 console.log('Shortest name from my friend list is: ',friendName)
