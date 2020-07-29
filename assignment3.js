@@ -1,15 +1,15 @@
+//problem no 1:
 function feetToMile(feet) {
     //var mile = feet/5280;
     var mile = feet*0.00018939;
     return mile;
-    
 }
 var allMile = [15002, 85600, 4589];
 var result = feetToMile(allMile[1]);
 var output = Math.round(result)
 console.log("Converted mile is:",output, "miles")
 
-
+// Problem no: 2
 function woodCalculator(chair, table, bed) {
     var x = chair*1;
     var y = table*3;
@@ -38,6 +38,8 @@ function woodCalculator2(bed) {
 var woodNeeded = woodCalculator2(14);
 console.log("total wood needed:",woodNeeded, "cubic feet") */
 
+
+// Problem no: 3
 function brickCalculator(noOfFloors) {
     
     if (noOfFloors <= 10) {
@@ -69,6 +71,7 @@ for (let i = 0; i < name.length; i++) {
 console.log(shortName) */
 
 
+// Problem no: 4
 function tinnyFriend(name) {
     var smallName = name[0].length;
     var shortName = name[0];
